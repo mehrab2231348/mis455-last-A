@@ -1,0 +1,36 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column; /* Arrange content vertically */
+  min-height: 100vh; /* Ensure body spans the full viewport height */
+}
+
+main {
+  flex: 1; /* Make the main content grow to push the footer down */
+}
+
+/* Footer Section */
+footer {
+  flex-shrink: 0; /* Prevent the footer from shrinking */
+  background-color: #343a40; /* Matches Bootstrap's bg-dark */
+  color: white;
+  text-align: center;
+  padding: 1rem 0; /* Add spacing */
+  width: 100%; /* Full width of the page */
+  position: relative;
+  bottom: 0;
+}
+
+/* Footer Links (Optional) */
+footer a {
+  color: #007bff; /* Bootstrap's primary color for links */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
